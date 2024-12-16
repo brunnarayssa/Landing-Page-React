@@ -10,7 +10,7 @@ const Card = () => {
                     <img
                                 src="https://via.placeholder.com/500x325.png?text=500x325"
                                 className="card-img-top"
-                                alt="Card 4"
+                                alt="Card 5"
                             />
                         <div className="card-body">
                             <h5 className="card-title d-flex justify-content-center">Card Title 1</h5>
@@ -26,7 +26,7 @@ const Card = () => {
                     <img
                                 src="https://via.placeholder.com/500x325.png?text=500x325"
                                 className="card-img-top"
-                                alt="Card 4"
+                                alt="Card 5"
                             />
                         <div className="card-body">
                             <h5 className="card-title d-flex justify-content-center">Card Title 2</h5>
@@ -42,7 +42,7 @@ const Card = () => {
                     <img
                                 src="https://via.placeholder.com/500x325.png?text=500x325"
                                 className="card-img-top"
-                                alt="Card 4"
+                                alt="Card 5"
                             />
                         <div className="card-body">
                             <h5 className="card-title d-flex justify-content-center">Card Title 3</h5>
@@ -58,7 +58,7 @@ const Card = () => {
                     <img
                                 src="https://via.placeholder.com/500x325.png?text=500x325"
                                 className="card-img-top"
-                                alt="Card 4"
+                                alt="Card 5"
                             />
                         <div className="card-body">
                             <h5 className="card-title d-flex justify-content-center">Card Title 4</h5>
@@ -74,7 +74,7 @@ const Card = () => {
                     <img
                                 src="https://via.placeholder.com/500x325.png?text=500x325"
                                 className="card-img-top"
-                                alt="Card 4"
+                                alt="Card 5"
                             />
                         <div className="card-body">
                             <h5 className="card-title d-flex justify-content-center">Card Title 5</h5>
@@ -90,7 +90,7 @@ const Card = () => {
                     <img
                                 src="https://via.placeholder.com/500x325.png?text=500x325"
                                 className="card-img-top"
-                                alt="Card 4"
+                                alt="Card 5"
                             />
                         <div className="card-body">
                             <h5 className="card-title d-flex justify-content-center">Card Title 6</h5>
