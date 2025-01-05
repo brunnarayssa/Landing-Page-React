@@ -1,109 +1,32 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const Card = () => {
-    return (
-        <>
-            <div className="container mt-5">
-                <div className="d-flex flex-wrap justify-content-between">
-                    {/* Card 1 */}
-                    <div className="card mb-4" style={{ width: "18rem" }}>
-                    <img
-                                src="https://via.placeholder.com/500x325.png?text=500x325"
-                                className="card-img-top"
-                                alt="Card 5"
-                            />
-                        <div className="card-body">
-                            <h5 className="card-title d-flex justify-content-center">Card Title 1</h5>
-                            <p className="card-text d-flex justify-content-center">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="#" className="btn btn-primary d-flex justify-content-center">Go somewhere</a>
-                        </div>
-                    </div>
 
-                    {/* Card 2 */}
-                    <div className="card mb-4" style={{ width: "18rem" }}>
-                    <img
-                                src="https://via.placeholder.com/500x325.png?text=500x325"
-                                className="card-img-top"
-                                alt="Card 5"
-                            />
-                        <div className="card-body">
-                            <h5 className="card-title d-flex justify-content-center">Card Title 2</h5>
-                            <p className="card-text d-flex justify-content-center">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="#" className="btn btn-primary d-flex justify-content-center">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    {/* Card 3 */}
-                    <div className="card mb-4" style={{ width: "18rem" }}>
-                    <img
-                                src="https://via.placeholder.com/500x325.png?text=500x325"
-                                className="card-img-top"
-                                alt="Card 5"
-                            />
-                        <div className="card-body">
-                            <h5 className="card-title d-flex justify-content-center">Card Title 3</h5>
-                            <p className="card-text d-flex justify-content-center">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="#" className="btn btn-primary d-flex justify-content-center">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    {/* Card 4 */}
-                    <div className="card mb-4" style={{ width: "18rem" }}>
-                    <img
-                                src="https://via.placeholder.com/500x325.png?text=500x325"
-                                className="card-img-top"
-                                alt="Card 5"
-                            />
-                        <div className="card-body">
-                            <h5 className="card-title d-flex justify-content-center">Card Title 4</h5>
-                            <p className="card-text d-flex justify-content-center">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="#" className="btn btn-primary d-flex justify-content-center">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    {/* Card 5 */}
-                    <div className="card mb-4" style={{ width: "18rem" }}>
-                    <img
-                                src="https://via.placeholder.com/500x325.png?text=500x325"
-                                className="card-img-top"
-                                alt="Card 5"
-                            />
-                        <div className="card-body">
-                            <h5 className="card-title d-flex justify-content-center">Card Title 5</h5>
-                            <p className="card-text d-flex justify-content-center">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="#" className="btn btn-primary d-flex justify-content-center">Go somewhere</a>
-                        </div>
-                    </div>
-
-                    {/* Card 6 */}
-                    <div className="card mb-4" style={{ width: "18rem" }}>
-                    <img
-                                src="https://via.placeholder.com/500x325.png?text=500x325"
-                                className="card-img-top"
-                                alt="Card 5"
-                            />
-                        <div className="card-body">
-                            <h5 className="card-title d-flex justify-content-center">Card Title 6</h5>
-                            <p className="card-text d-flex justify-content-center">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            </p>
-                            <a href="#" className="btn btn-primary d-flex justify-content-center">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    );
+const Card = (props) => {
+	return (
+  <div className="col-12 col-md-6 col-lg-3 mb-4">
+		<div className="card">
+      <img src={props.image} className="card-img-top" alt="..."/>
+      <div className="card-body text-center">
+        <h5 className="card-title">{props.title}</h5>
+        <p className="card-text">{props.description}</p>
+      </div>
+      <div class="card-footer text-center">
+          <a href={props.buttonURL} className="btn btn-primary btn-sm">{props.buttonLabel}</a>
+        </div>
+    </div>
+  </div>
+	);
 };
+
+Card.propTypes = {
+  // PropTypes
+  image: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  buttonLabel: PropTypes.string,
+  buttonURL: PropTypes.string,
+}
+
 
 export default Card;
